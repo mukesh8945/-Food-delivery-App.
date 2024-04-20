@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* styleAddResto.css */
+
+/* styleAddResto.css */
+
+body {
+    margin: 0;
+    padding-top: 10px;
+    background: url('https://images.unsplash.com/photo-1452967712862-0cca1839ff27?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+
+form {
+    text-align: left;
+}
+
+.main-container {
+    width: 320px;
+    height: 400px;
+    max-width: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    box-sizing: border-box;
+    padding: 50px 40px;
+    text-align: center;
+    border-radius: 30px;
+    line-height: 1.6;
+    overflow-y: auto;
+	margin-top: 20px;
+}
+
+select {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+}
+
+select:focus {
+    background: rgba(0, 0, 0, 0.5); /* Dark background when focused */
+    border-bottom: 1px solid #ffc107;
+}
+
+label {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #ffc107;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+a:hover {
+    color: #ffc107;
+}
+

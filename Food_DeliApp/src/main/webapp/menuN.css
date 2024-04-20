@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    margin-bottom: 7vh;
+}
+
+.header-image {
+    position: absolute;
+    top: -200vh;
+    z-index: -1;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    list-style: none;
+    justify-content: space-between;
+    color: white;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1000;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 10px 800px;
+}
+
+.nav-bar li {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 6px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 20vh;
+    align-items: left;
+    padding-left: 20%;
+}
+
+.head h3 {
+    color: yellow;
+    font-size: 2.9rem;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sec-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 13vh;
+}
+
+.box {
+    position: relative;
+    flex: 0 1 calc(25% - 10px);
+    width: calc(25% - 10px);
+    height: 400px; /* Set a fixed height for the box */
+    margin: 3px 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px grey;
+    background-color: rgb(243, 240, 240);
+}
+
+.box img {
+    width: 100%;
+    height: 120%; /* Make sure the image fills the container */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 15px;
+    border: 3px solid rgba(204, 203, 203);
+    z-index: -1;
+}
+
+.white {
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    background-color: white;
+    width: 100%;
+    padding: 5px; /* Add padding to reduce white space */
+    z-index: 2;
+}
+
+.white p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: rgb(56, 56, 56);
+    letter-spacing: 0.7px;
+    margin: 5px 0; /* Add margin for better spacing */
+}
+
+.menu-info {
+    padding: 10px;
+    text-align: left;
+    color: #333;
+    margin-top: 5px; /* Add margin to separate from .white */
+}
+
+.menu-info p {
+    margin: 5px 0;
+    font-size: 0.8em;
+}
+
+.menu-info p:nth-child(3) {
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.white span {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: none; /* hide restaurant name */
+}
+/* Add this CSS to your existing stylesheet */
+.form-add-to-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-add-to-cart input[type="hidden"],
+.form-add-to-cart button {
+    margin-top: 10px;
+}
+
+.form-add-to-cart button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form-add-to-cart button:hover {
+    background-color: darkblue;
+}
